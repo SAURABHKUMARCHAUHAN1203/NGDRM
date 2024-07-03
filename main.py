@@ -17,12 +17,7 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH", "3240c1615daa1fbbca45c34a9bb8ecf2")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
-
-    AUTH_USERS = os.environ.get('AUTH_USERS', '7184539514').split(',')
-    for i in range(len(AUTH_USERS)):
-        AUTH_USERS[i] = int(AUTH_USERS[i])
-
-    GROUPS = os.environ.get('GROUPS', '-1002047255106').split(',')
+ GROUPS = os.environ.get('GROUPS', '-1002047255106').split(',')
     for i in range(len(GROUPS)):
         GROUPS[i] = int(GROUPS[i])
 
